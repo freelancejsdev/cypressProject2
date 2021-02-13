@@ -1,0 +1,23 @@
+{
+  "name": "cypressdecember",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "triggerAllTests-chrome":"npx cypress run --browser chrome",
+    "triggerAllTests-apiTesting":"npx cypress run --browser chrome --spec cypress/integration/apiTesting/* ",
+    "triggerAllTests-customCommands":"npx cypress run --browser chrome --spec cypress/integration/customCommandsExamples/* ",
+    "triggerAllTests-cypressBasics":"npx cypress run --browser chrome --spec cypress/integration/cypressBasics/* ",
+    "triggerAllTests-fixturesExamples":"npx cypress run --browser chrome --spec cypress/integration/fixturesExamples/* ",
+    "triggerAllTests-pageObjectModel":"npx cypress run --browser chrome --spec cypress/integration/pageObjectModelTestCases/* ",
+    "triggerAllTests-testCases":"npx cypress run --browser chrome --spec cypress/integration/testCases/* "
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.0.0",
+    "cypress-xpath": "^1.6.1"
+  }
+}
